@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Asif Hossain Nasir Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+	background-color: #E6E6E6;
+}
+
+.skill-mf > span,
+.skill-mf .pull-right {
+	color: #fff;
+}
+
+.skill-item-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.skill-icon {
+	width: 24px;
+	height: 24px;
+	flex: 0 0 24px;
+	object-fit: contain;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+#project-section .block-20 {
+	height: 260px;
+}
+
+.row.project-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-auto-rows: 1fr;
+	row-gap: 30px;
+}
+
+.project-grid > .col-md-6 {
+	width: auto;
+	max-width: none;
+	flex: none;
+}
+
+.project-grid .blog-entry {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.06);
+	overflow: hidden;
+	transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.project-grid .blog-entry:hover {
+	border-color: #ffbd39;
+	background: rgba(255, 189, 57, 0.12);
+}
+
+.project-grid .block-20 {
+	flex: 0 0 260px;
+}
+
+.project-grid .blog-entry .text {
+	flex: 1;
+	padding: 0 24px 24px;
+	text-align: center;
+}
+
+.project-grid .project-more-link {
+	min-height: 0;
+	margin-bottom: 0;
+}
+
+.project-more-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: 100%;
+	min-height: 260px;
+	margin-bottom: 30px;
+	padding: 32px;
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.06);
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.project-more-link:hover,
+.project-more-link:focus {
+	border-color: #ffbd39;
+	background: rgba(255, 189, 57, 0.12);
+	color: #fff;
+}
+
+.project-more-link strong {
+	color: #00BFFF;
+	font-weight: 700;
+}
+
+.project-more-link:hover strong,
+.project-more-link:focus strong {
+	color: #fff;
+}
+
+.brand-name {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: transparent !important;
+	background: linear-gradient(105deg, #fff1bf 0%, #ffd166 48%, #ffbd39 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: drop-shadow(0 1px 5px rgba(255, 189, 57, 0.22));
+}
+
+.about-heading h1.big {
+	width: 100%;
+	text-align: center;
+}
+
+.about-heading h2 {
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	#about-section .about-img {
+		height: calc(100% - 10px);
+	}
+
+	#about-section .about-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (min-width: 992px) {
+	.experience-card-left,
+	.education-card-left {
+		width: calc(100% - 2.6cm);
+		margin-left: 2cm;
+		margin-right: 0.6cm;
+	}
+
+	.experience-card-right,
+	.education-card-right {
+		width: calc(100% - 2.6cm);
+		margin-left: 0.6cm;
+		margin-right: 2cm;
+	}
+}
+
+.experience-row .resume-wrap,
+.education-row .resume-wrap {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.resume-wrap .date.experience-date {
+	font-size: 18px;
+	font-weight: 700;
+	color: #E6E6E6;
+}
+
+.nud-company-link {
+	color: #00BFFF;
+}
+
+.nud-company-link:hover,
+.nud-company-link:focus {
+	color: #00BFFF;
+	text-decoration: underline;
+}
+
+.education-link,
+.education-link:hover,
+.education-link:focus {
+	color: #00BFFF;
+}
+
+.education-link:hover,
+.education-link:focus {
+	text-decoration: underline;
+}
+
+.about-info p {
+	margin-bottom: 10px;
+}
+
+.about-info p .title-s {
+	font-weight: 400;
+	color: #999;
+}
+
+.about-info p span:not(.title-s) {
+	font-weight: 600;
+	color: #fff;
+}
+
+.ftco-about ul.about-info li span:first-child {
+	font-weight: 400;
+	color: #999;
+}
+
+.ftco-about ul.about-info li span:last-child {
+	font-weight: 600;
+	color: #fff;
+}
+
+.about-experience {
+	margin-top: 59px;
+}
+
+.about-counter {
+	margin-top: 16px;
+}
+
+.about-counter .about-projects {
+	margin-bottom: 36px;
+}
+
+.about-counter .about-link {
+	margin-bottom: 18px;
+}
+
+.biskfarm-link {
+	color: #00BFFF;
+}
+
+.biskfarm-link:hover,
+.biskfarm-link:focus {
+	color: #00BFFF;
+	text-decoration: underline;
+}
+
+.skill-mf {
+	margin-top: 58px;
+}
+
+.skills-content .skill-mf,
+.skills-content .about-experience {
+	margin-top: 0;
+}
+
+.skills-content .skill-mf {
+	width: 100%;
+}
+
+@media (max-width: 991.98px) {
+	.about-experience {
+		margin-top: 14px;
+	}
+	.skill-mf {
+		margin-top: 8px;
+	}
+	.about-counter {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.row.project-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span class="brand-name">Asif Hossain Nasir</span></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			   <li class="nav-item"><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/aaa.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Asif Hossain Nasir</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						'Data Analyst  ',
+						'Data Analyst   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Statistics Graduate</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/asif-hossain-nasir?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/AsifNasir20">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section about-heading text-center ftco-animate">
+					<h1 class="big big-2">About</h1>
+					<h2 class="mb-5">About Me</h2>
+				</div>
+			</div>
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<div class="row">
+								<div class="col-sm-6 col-md-5">
+									<div class="about-img">
+										<img src="images/A.png" class="img-fluid rounded b-shadow-a" alt="">
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-7">
+									<div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Asif Hossain Nasir</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>15 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Kolkata, India</span></p>
+										<p><span class="title-s">Current Company: </span> <span><a class="biskfarm-link" href="https://www.biskfarm.com/" target="_blank" rel="noopener noreferrer">Bisk Farm</a></span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<ul class="about-info px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+								<li class="d-flex"><span>Domain:</span> <span>FMCG · Ecommerce · Operations Analytics</span></li>
+								<li class="d-flex"><span>Education:</span> <span>Bachelor of Statistics</span></li>
+								<li class="d-flex"><span>Language:</span> <span>English, Hindi, Bengali, &amp; Urdu</span></li>
+								<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Learning</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center pb-5">
+				<div id="skills" class="col-md-12 heading-section about-heading text-center ftco-animate">
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-5">Skills</h2>
+				</div>
+			</div>
+
+			<div class="row d-flex align-items-stretch skills-content">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="skill-mf">
+						<span class="skill-item-label"><img class="skill-icon" src="images/SQL.png" alt="" aria-hidden="true">SQL</span> <span class="pull-right">95%</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span class="skill-item-label"><img class="skill-icon" src="images/Power BI.png" alt="" aria-hidden="true">Power BI</span> <span class="pull-right">85%</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span class="skill-item-label"><img class="skill-icon" src="images/Data Visualization.png" alt="" aria-hidden="true">Data Visualization</span> <span class="pull-right">90%</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span class="skill-item-label"><img class="skill-icon" src="images/Excel.png" alt="" aria-hidden="true">Advance Excel</span> <span class="pull-right">85%</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span class="skill-item-label"><img class="skill-icon" src="images/Statistical Testing.png" alt="" aria-hidden="true">Statistical Analysis</span> <span class="pull-right">80%</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<p class="about-experience">I am a Statistics graduate with hands-on experience in SQL, Power BI, and Advanced Excel, specializing in data cleaning, analysis, visualization, and interactive dashboard development. I use Figma for dashboard design and Canva & PowerPoint to present insights clearly to both technical and non-technical audiences. I also leverage AI tools to improve efficiency, streamline workflows, reduce errors, and continuously learn better ways to turn data into meaningful business insight.</p>
+							<div class="counter-wrap about-counter ftco-animate d-flex">
+								<div class="text">
+									<p class="about-projects">
+										<span class="number" data-number="10">0</span> <span>+</span>
+										<span>&nbsp; Projects completed</span>
+									</p>
+									<p class="about-link"><a href="https://www.linkedin.com/in/asif-hossain-nasir?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<xdiv class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-5">Resume</h2>
+<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1yRHG3eeQZRqkt3biCW1DWAiZKzWTyd18/view?usp=drivesdk" class="btn btn-primary py-3 px-3">Resume</a></p>
+    			</div>
+    		</div>     </div>
+        </div>
+		</div>
+
+    		
+    	</div>
+    </section>
+
+		<div class="row justify-content-center pb-5" id="experience-section">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Experience</h1>
+				<h2 class="mb-5">Experience</h2>
+			</div>
+		</div>
+		<br>
+		
+		<div class="row experience-row">
+				<div class="col-md-6">
+					<div class="resume-wrap experience-card-left ftco-animate">
+						<span class="date experience-date">2026-Present</span>
+						<h2>Data Analyst</h2>
+						<span class="position"><a class="biskfarm-link" href="https://www.biskfarm.com/" target="_blank" rel="noopener noreferrer">Bisk Farm</a></span>
+						<p class="mt-4">A FMCG company specializing in biscuits and bakery products. 
+							<ul>
+								<li>FMCG company specializing in biscuits, bakery products, and packaged foods, with exposure to HR & Workforce Analytics.</li>
+								<li>Worked on Talent Acquisition, Attendance, and Employee Performance, developing Power BI reports and dashboards for analysis.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap experience-card-right ftco-animate">
+						<span class="date experience-date">2025-2025</span>
+						<h2>Data Analyst</h2>
+						<span class="position"><a class="nud-company-link" href="https://thenud.com/?srsltid=AU7gw4UWEkmmaO8iN9PzGBncNw7anzur0w7JyraaYi0dq7NM4aRY6nfT" target="_blank" rel="noopener noreferrer">NUD</a></span>
+						<p class="mt-4">An E-commerce startup focused on apparel and online retail. 
+							<ul>
+								<li>E-commerce startup focused on apparel and online retail, with hands-on exposure to business operations and process management.</li>
+								<li>Worked across Customer Support, Sales, Inventory, Billing, Employee Attendance, and Employee Performance, using data for business process analysis.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Education</h1>
+				<h2 class="mb-5">Education</h2>
+			</div>
+		</div>
+		<br>
+		
+			<div class="row education-row">
+    			<div class="col-md-6">
+					<div class="resume-wrap education-card-left ftco-animate">
+						<span class="date experience-date">2024-2025</span>
+    					<h2>Data Science & Analytics</h2>
+						<span class="position"><a class="education-link" href="https://ivyproschool.com/" target="_blank" rel="noopener noreferrer">IVY Pro School</a></span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+					<div class="resume-wrap education-card-right ftco-animate">
+						<span class="date experience-date">2020-2023</span>
+    					<h2>BSC in Statistics (Hons.)</h2>
+						<span class="position"><a class="education-link" href="https://www.caluniv.ac.in/" target="_blank" rel="noopener noreferrer">University of Calcutta</a></span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		
+
+   
+
+			</div>
+	<section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Power BI & Advance Excel.</p>
+          </div>
+        </div>
+		<div class="row project-grid">
+			<div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry">
+					<a href="https://github.com/AsifNasir20" class="block-20 zoom-effect" style="background-image: url('images/Players.jpg');"></a>
+					<div class="text mt-3 d-block text-center">
+						
+						<h3 class="heading"><a href="https://github.com/AsifNasir20/Players_Flip_Card_Dashboard-BI">Football Player Flip Card Experience.</a></h3>
+						<p>Built interactive football player cards across clubs using Power BI, HTML & AI, featuring dynamic flips and player insights.
+</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/AsifNasir20" class="block-20 zoom-effect" style="background-image: url('images/Suzuki.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/AsifNasir20/Suzuki_Motorcycle_India--Executive-Analytics-Suite">Suzuki Motorcycle Dashboard</a></h3>
+				  <p>Analyzed Suzuki motorcycles across segments, from superbikes to daily commuters, across Indian regions using Power BI.
+</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/AsifNasir20" class="block-20 zoom-effect" style="background-image: url('images/Rape case In india.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/AsifNasir20">Rape Cae in India (2018-2022)</a></h3>
+				  <p>Analyzed government-provided rape case data across all Indian States and Union Territories (2018–2022) using SQL queries, and presented key insights through Excel reports and visualizations.
+</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex ftco-animate">
+				<a class="project-more-link" href="https://github.com/AsifNasir20" target="_blank" rel="noopener noreferrer">
+					<span>For more projects, please click</span>
+					<strong>Visit my GitHub</strong>
+				</a>
+			</div>
+	  </div>
+    </section>
+
+	
+	
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Kolkata, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="https://wa.me/918777205889" target="_blank" rel="noopener noreferrer">+91 8777205889</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=asifnasir606%40gmail.com" target="_blank" rel="noopener noreferrer">asifnasir606@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1yRHG3eeQZRqkt3biCW1DWAiZKzWTyd18/view?usp=drivesdk">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://www.linkedin.com/in/asif-hossain-nasir?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary py-3 px-5">Let's connect</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt text-center">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/AsifNasir20"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/asif-hossain-nasir?utm_source=share_via&utm_content=profile&utm_medium=member_android"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/asifhossain.nasir.7"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/asif.hn20?utm_source=qr&igsi=MWU4aG44dXFoOWJ2aA==/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Asif can't be removed. Template is licensed under CC BY 3.0. -->
+		<style>
+.footer-link {
+    color: #0077b5;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: #0077b5;
+    text-decoration: underline;
+}
+</style>
+
+Copyright &copy;&nbsp;<script>document.write(new Date().getFullYear());</script> by
+<a href="https://www.linkedin.com/in/asif-hossain-nasir?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+   target="_blank"
+   class="footer-link">
+   Asif Hossain Nasir
+</a>
+ | Data Analyst
+
+	<!-- Link back to Asif can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
